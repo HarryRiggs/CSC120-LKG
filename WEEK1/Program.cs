@@ -11,6 +11,8 @@ namespace WEEK1
         static void Main(string[] args)
         {
             Console.WriteLine("Here is a change");
+            Console.WriteLine("Here is another change");
+
         }
     }
 }
