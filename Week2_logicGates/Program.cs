@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogicCircuit.Gates.Composite;
 using LogicCircuit.Gates.Simple;
 
 namespace Week2_logicGates
@@ -11,6 +12,11 @@ namespace Week2_logicGates
     {
         public static void Main(string[]args)
         {
+            OR1();
+            OR2();
+            OR3();
+            OR4();
+
             var logicCircuit = new AND();
 
             logicCircuit.SetInputA(false);
@@ -81,6 +87,11 @@ namespace Week2_logicGates
             tester.SetInputB(true);
             var result = tester.Output;
             Console.WriteLine(result.State);
+        }
+        public static void NAND()
+        {
+            var norGate = new NOR();
+
         }
     }
 }
