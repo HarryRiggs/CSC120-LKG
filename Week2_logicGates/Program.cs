@@ -9,7 +9,7 @@ namespace Week2_logicGates
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[]args)
         {
             var logicCircuit = new AND();
 
@@ -47,28 +47,40 @@ namespace Week2_logicGates
             logicCircuit1.SetInputA(true);
             var result01 = logicCircuit1.Output;
             Console.WriteLine(result01.State);
-
-
-            var logicCircuit2 = new OR();
-
-            logicCircuit2.Equals(false);
-            var result1= logicCircuit2.Equals;
-            Console.WriteLine(result1.State);
-
-            logicCircuit2.Equals(false, true);
-            var result2= logicCircuit2.Equals;
-            Console.WriteLine(result2.State);
-
-            logicCircuit2.Equals(true, false);
-            var result3= logicCircuit2.Equals;
-            Console.WriteLine(result3.State);
-
-            logicCircuit2.Equals(true, true);
-            var result4 = logicCircuit2.Equals;
-            Console.WriteLine(result4.State);
         }
 
+        public static void OR1()
+        {
+            var tester = new OR();
 
-
+            tester.SetInputA(false);
+            tester.SetInputB(false);
+            var result = tester.Output;
+            Console.WriteLine(result.State);
+        }
+        public static void OR2()
+        {
+            var tester = new OR();
+            tester.SetInputA(false);
+            tester.SetInputB(true);
+            var result = tester.Output;
+            Console.WriteLine(result.State);
+        }
+        public static void OR3()
+        {
+            var tester = new OR();
+            tester.SetInputA(true);
+            tester.SetInputB(false);
+            var result = tester.Output;
+            Console.WriteLine(result.State);
+        }
+        public static void OR4()
+        {
+            var tester = new OR();
+            tester.SetInputA(true);
+            tester.SetInputB(true);
+            var result = tester.Output;
+            Console.WriteLine(result.State);
+        }
     }
 }

@@ -44,14 +44,13 @@ namespace LogicCircuit.Test.Gates
             }
         }
 
-        [TestMethod, TestCategory("Gate.Simple")]
         public void OR()
         {
             //Given
-            var tester = new Input2Output1TruthTableTester<OR>();
+            var logicCircuit2 = new Input2Output1TruthTableTester<OR>();
 
             //When + Then
-            tester.Test(false, true, true, true);
+            object p = logicCircuit2.Test(false, true, true, true);
         }
     }
 }
