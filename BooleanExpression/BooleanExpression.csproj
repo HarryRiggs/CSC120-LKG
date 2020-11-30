@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E191B21-272A-45DB-BE43-F476286AA9C9}</ProjectGuid>
+    <ProjectGuid>{F3448A20-61F5-43F1-9BFF-9A7536A0549D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Identity</RootNamespace>
-    <AssemblyName>Identity</AssemblyName>
+    <RootNamespace>BooleanExpression</RootNamespace>
+    <AssemblyName>BooleanExpression</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LogicCircuit">
-      <HintPath>..\Week2_logicGates\LogicCircuts\LogicCircuit-master\LogicCircuit-master\LogicCircuit\bin\Debug\LogicCircuit.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,8 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Identity.cs" />
-    <Compile Include="IdentityInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E191B21-272A-45DB-BE43-F476286AA9C9}</ProjectGuid>
+    <ProjectGuid>{E11D7BB4-99E3-4E6E-A362-75AE789CC7E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Identity</RootNamespace>
-    <AssemblyName>Identity</AssemblyName>
+    <RootNamespace>PartB</RootNamespace>
+    <AssemblyName>PartB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Identity.cs" />
-    <Compile Include="IdentityInput.cs" />
+    <Compile Include="IdentityB.cs" />
+    <Compile Include="IdentityInputB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
