@@ -25,17 +25,19 @@ namespace PartB
             var xnor = new XNOR();
             var xor = new XOR();
 
-            //or.SetInputA(SetInputX);
-            //or.SetInputB(SetInputY);
-            //var outputFromOR = or.Output.State;
-            //not.SetInputA(outputFromOR);
+            or.SetInputA(SetInputX);
+            or.SetInputB(SetInputY);
+            var outputFromOR = or.Output.State;
+            not.SetInputA(outputFromOR);
+            result = not.Output.State;
+
+            //and.SetInputA(SetInputX);
+            //and.SetInputB(SetInputY);
+            //var outputFromAND = and.Output.State;
+            //not.SetInputA(outputFromAND);
             //result = not.Output.State;
 
-            and.SetInputA(SetInputX);
-            and.SetInputB(SetInputY);
-            var outputFromAND = and.Output.State;
-            not.SetInputA(outputFromAND);
-            result = not.Output.State;
+            xnor.XNOR(SetInputX);
 
             //not.SetInputA(SetInputX);
             //var xnot = not.Output.State;
