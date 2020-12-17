@@ -37,8 +37,6 @@ namespace PartB
             //not.SetInputA(outputFromAND);
             //result = not.Output.State;
 
-            xnor.XNOR(SetInputX);
-
             //not.SetInputA(SetInputX);
             //var xnot = not.Output.State;
             //not.SetInputA(SetInputY);
